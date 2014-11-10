@@ -1,3 +1,4 @@
+//类的继承、方法复用、与多态的演示
 public class Inheritance
 {
 	public void testInheritance()
@@ -18,6 +19,16 @@ public class Inheritance
 		Person q = new Teacher("English", "合肥工业大学");
 		p.show();
 		q.show();
+		//q.teaching(); 编译时报错了
+		//旧的方法在新类中复用，即复用了父类方法
+		System.out.println(a.getPersonHomeTown());
+		System.out.println(a.getPersonGender());
+		System.out.println(b.getPersonHomeTown());
+		System.out.println(b.getPersonGender());
+		System.out.println(q.getPersonGender());
+		System.out.println(q.getPersonHomeTown());
+		System.out.println(p.getPersonHomeTown());
+		System.out.println(p.getPersonGender());
 	}
 }
 
